@@ -1,12 +1,17 @@
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
-    color: white;
-    text-align: left;
+    color:lightsalmon;
+    text-align: center;
+    border: 2px solid green;
 }
 strong{
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: tomato;
+    border: 2px solid green;
+    position: fixed;
+    top: 20px;
+    right: 450px;
 }
 .center{
     margin-left: auto;
@@ -16,10 +21,10 @@ strong{
 table,tr,td{
     border: 1px solid;
     overflow-wrap: break-word;
-    color: white;
+    color: lightsalmon;    
 }
 div{
-    color: white;
+    color:tomato;
     font-size: 20px;
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -37,4 +42,8 @@ div.sol{
 div.sag{
     width: 66%;
     float: right;
+    position: fixed;
+    top: 60px;
+    right: 5px;
+    border: 2px solid green;
 }
