@@ -10,8 +10,8 @@ strong{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 2px ridge #A9AF7E;
     position: fixed;
-    top: 20px;
-    right: 650px;
+    top: 35%;
+    left: auto;
     color: #557153;
     background-color: #E6E5A3;
 }
@@ -28,11 +28,13 @@ table,tr,td{
 }
 
 div{
-    color:#557153;
+    display: block;
+    color: #557153;
     font-size: 20px;
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 body{
     background-color: #E8F3D6;
     overflow: hidden;
@@ -40,20 +42,42 @@ body{
     
 }
 div.sol{
+    display: inline-block;
     background-color: #E6E5A3;
-    width: 300px;
-    height: 1000px;
-    float: left;   
-    
+    width: 20%;
+    height: auto; 
 }
 
 div.sag{
-    width: 568px;
-    float: right;
+    display: inline-block;
+    width: 100%;
+    margin-right: 1%;
     position: fixed;
-    top: 80px;
-    right: 650px;
+    top: 450px;
+    left: auto;
     border: 2px ridge #A9AF7E;
     background-color: #E6E5A3;
 }
 
+header h1{
+    display: block;
+    color: #557153;
+    border: 2px solid #557153;
+    background-repeat: repeat;
+    margin-right: 1%;
+    padding: 5%;
+    background-image: url("../images/header_photo.jpg");
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    margin-right: 1%;
+    background-color: #557153;
+    color: #E6E5A3;
+  }
+
+p{
+    
+}
