@@ -5,17 +5,6 @@ h1{
 
 }
 
-strong{
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 2px ridge #A9AF7E;
-    position: fixed;
-    top: 35%;
-    left: auto;
-    color: #557153;
-    background-color: #E6E5A3;
-}
-
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -41,22 +30,32 @@ body{
     width: 100%;
     
 }
+
+strong{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: fixed;
+    top: 40%;
+    left: auto;
+    color: #557153;
+}
+
 div.sol{
     display: inline-block;
     background-color: #E6E5A3;
     width: 20%;
     height: auto; 
+    margin-bottom: 1%;
 }
 
 div.sag{
     display: inline-block;
-    width: 80%;
-    right: auto;
+    width: 60%;
     position: fixed;
     padding: 8%;
-    left: auto;
+    margin-left: 2%;
     border: 2px ridge #A9AF7E;
-    background-color: #E6E5A3;
+    background-color: #E8F3D6;
 }
 
 header h1{
