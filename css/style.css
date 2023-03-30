@@ -80,6 +80,13 @@ footer {
 button{
     background-color: #E6E5A3;
     color: #557153;
-    font-size: 26px;
+    font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input{
+    color: #557153;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E6E5A3;
 }

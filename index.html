@@ -23,8 +23,13 @@
                         Selamlar, ben Ali. Marmara Üniversitesi Teknoloji Fakültesi</br>
                         Bilgisayar Mühendisliği Bölümü öğrencisiyim.<br><br>
                     </div>
-                    <button onclick="cvIndir()">CV İndir</button>
-                    <button onclick="KoyuTema()">Tema Değiştir</button>
+                    <button onclick="cvIndir()">CV İndir<br></button>
+                    
+                    <div class="input">
+                        <button onclick="yorumYap()">Yorum Yap</button>
+                        <input type="text" id="input1" >
+                    </div>
+                    
                 </td>  
             </div>
             <footer>
@@ -41,9 +46,9 @@
         function cvIndir() {
           alert("CV Başarılı Şekilde İndirildi.");
         }
-        function KoyuTema() {
-            var element = document.getElementById("sag");
-            element.style.color = "red";
+        function yorumYap() {
+            var element = document.getElementById("input1");
+            alert(element.value);
         }
     </script>
 </body>
