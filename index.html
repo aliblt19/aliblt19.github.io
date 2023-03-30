@@ -21,8 +21,10 @@
                 <td>
                     <div><strong>Marmara Üniversitesi Teknoloji Fakültesi</strong>
                         Selamlar, ben Ali. Marmara Üniversitesi Teknoloji Fakültesi</br>
-                        Bilgisayar Mühendisliği Bölümü öğrencisiyim.
+                        Bilgisayar Mühendisliği Bölümü öğrencisiyim.<br><br>
                     </div>
+                    <button onclick="cvIndir()">CV İndir</button>
+                    <button onclick="KoyuTema()">Tema Değiştir</button>
                 </td>  
             </div>
             <footer>
@@ -30,11 +32,19 @@
                     <a href="https://www.linkedin.com/in/ali-bulut-b47237218/"><img src="images/linkedin.png" alt="linkedinlogo" class="center" 
                         style="width: 42px; height: 42px; margin-left: 1%; margin-top: 1%;"></a>
                     <a href="https://github.com/aliblt19"><img src="images/github.png" alt="githublogo" class="center" 
-                        style="width: 42px; height: 42px; margin-left: 1%;"></a></p>
-              </footer>
-            </div> 
-        </table>
-    </body>
+                        style="width: 42px; height: 42px; margin-left: 1%;"></a>
+                </p>
+            </footer>
+        </div> 
+    </table>
+    <script>
+        function cvIndir() {
+          alert("CV Başarılı Şekilde İndirildi.");
+        }
+        function KoyuTema() {
+            var element = document.getElementById("sag");
+            element.style.color = "red";
+        }
+    </script>
+</body>
 </html>
-
-

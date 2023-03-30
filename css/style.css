@@ -52,7 +52,7 @@ div.sag{
     display: inline-block;
     width: 60%;
     position: fixed;
-    padding: 8%;
+    padding: 6%;
     margin-left: 2%;
     border: 2px ridge #A9AF7E;
     background-color: #E8F3D6;
@@ -60,12 +60,12 @@ div.sag{
 
 header h1{
     display: block;
-    color: #557153;
+    color:#E6E5A3;
     border: 2px solid #557153;
     background-repeat: repeat;
     margin-right: 1%;
     padding: 5%;
-    background-image: url("../images/header_background.jpg");
+    background-color: #557153;
 }
 
 footer {
@@ -76,3 +76,10 @@ footer {
     background-color: #557153;
     color: #E6E5A3;
   }
+
+button{
+    background-color: #E6E5A3;
+    color: #557153;
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
