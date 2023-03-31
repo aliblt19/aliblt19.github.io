@@ -1,55 +1,264 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Ali Bulut</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>WEB SAYFAMA HOŞ GELDİNİZ !</h1>
-        </header>
-        <div class="body" style="overflow: hidden; width: 100%;">
-            <div class="sol">
-            <tr>
-                <td colspan="3"><img src="images/foto.jpg" alt="alibulutPhoto" class="center" style="width: 200px; height: 200px; margin-top: 10px; margin-left: 50px;"></td>
-            </tr>
-            <tr>
-                <td><h1>Ali Bulut</h1></td>
-            <tr>
-            </div>
-            <div class="sag">
-                <td>
-                    <div><strong>Marmara Üniversitesi Teknoloji Fakültesi</strong>
-                        Selamlar, ben Ali. Marmara Üniversitesi Teknoloji Fakültesi</br>
-                        Bilgisayar Mühendisliği Bölümü öğrencisiyim.<br><br>
-                    </div>
-                    <button onclick="cvIndir()">CV İndir<br></button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Ali Bulut</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#anasayfa" class="nav__link active-link">ANA SAYFA</a>
+                    </li>
                     
-                    <div class="input">
-                        <button onclick="yorumYap()">Yorum Yap</button>
-                        <input type="text" id="input1" >
-                    </div>
+                    <li>
+                        <a href="#ozgecmis" class="nav__link">ÖZGEÇMİŞ</a>
+                    </li>
                     
-                </td>  
+                    <li>
+                        <a href="#beceriler" class="nav__link">BECERİLER</a>
+                    </li>
+
+                    <li>
+                        <a href="#projeler" class="nav__link">PROJELER</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
+                </div>
             </div>
-            <footer>
-                <p>Bana Ulaşabileceğiniz Linkler<br>
-                    <a href="https://www.linkedin.com/in/ali-bulut-b47237218/"><img src="images/linkedin.png" alt="linkedinlogo" class="center" 
-                        style="width: 42px; height: 42px; margin-left: 1%; margin-top: 1%;"></a>
-                    <a href="https://github.com/aliblt19"><img src="images/github.png" alt="githublogo" class="center" 
-                        style="width: 42px; height: 42px; margin-left: 1%;"></a>
-                </p>
-            </footer>
-        </div> 
-    </table>
-    <script>
-        function cvIndir() {
-          alert("CV Başarılı Şekilde İndirildi.");
-        }
-        function yorumYap() {
-            var element = document.getElementById("input1");
-            alert(element.value);
-        }
-    </script>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+      <!--HOME-->
+      <section class="home" id="anasayfa">
+        <div class="home__container container grid">
+            <img src="assets/images/pp.jpg" alt="" class="home__img"/>
+            <div class="home__data">
+                <h1 class="home__name">Ali Bulut</h1>
+                <p class="home__work">Bilgisayar Mühendisliği Öğrencisi</p>
+                        <dl class="home__list">
+                            <dt>YAŞ:</dt>
+                            <dd>20</dd>
+                            <dt>TELEFON:</dt>
+                            <dd>(+90)506 102 84 44</dd>
+                            <dt>E-MAIL:</dt>
+                            <dd>alibulut9b450@gmail.com</dd>
+                            <dt>E-MAIL 2:</dt>
+                            <dd>ali.bulut@marun.edu.tr</dd>
+                        </dl>
+                <div class="home__socials">
+                    <a href="https://www.linkedin.com/in/ali-bulut-b47237218/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                      
+                    <a href="https://github.com/aliblt19" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--ANA SAYFA-->
+      <section class="hello section container">
+        <h2 class="section__title">Selamlar</h2>
+
+        <p class="hello__details text-lg">Marmara Üniversitesi Teknoloji Fakültesi Bilgisayar 
+                                          Mühendisliği 3.sınıf öğrencisiyim.
+        </p>
+        <a href="assets/images/Ali_Bulut_CV.pdf" 
+           class="button button--flex text-sm">
+           <i class="ri-download-line"></i>CV İNDİR</a>
+      </section>
+
+      <!--ÖZGEÇMİŞ-->
+      <section class="section container" id="ozgecmis">
+        <h2 class="section__title">Özgeçmiş</h2>
+
+        <div class="resume__container grid">
+            <div class="resume__data">
+                <h3 class="resume__title text-sm">EĞİTİM</h3>
+
+                <div class="resume__item">
+                    <h3 class="resume__subtitle text-sm">MARMARA ÜNİVERSİTESİ</h3>
+                    <p class="resume__data text-sm">2020-</p>
+                    <p class="resume__description text-lg">Teknoloji Fakültesi Bilgisayar Mühendisliği</p>
+                </div>
+
+                <div class="resume__item">
+                    <h3 class="resume__subtitle text-sm">ÖZEL MALTEPE FİNAL ANADOLU LİSESİ</h3>
+                    <p class="resume__data text-sm">2019-2020</p>
+                </div>
+
+                <div class="resume__item">
+                    <h3 class="resume__subtitle text-sm">MALTEPE FEN LİSESİ</h3>
+                    <p class="resume__data text-sm">2016-2019</p>
+                </div>
+            </div>
+
+            <div class="resume__data">
+                <h3 class="resume__title text-sm">TECRÜBELER</h3>
+
+                <div class="resume__item">
+                    <h3 class="resume__subtitle text-sm">ALTERNATİF YAZILIM VE DANIŞMANLIK LTD.</h3>
+                    <p class="resume__data text-sm">06.2022-08.2022</p>
+                    <p class="resume__description text-lg">Stajyer Mühendis</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--BECERİLER-->
+      <section class="section container" id="beceriler">
+        <h2 class="section__title">Beceriler</h2>
+
+        <div class="skills__container grid">
+            <div class="skills__content">
+                <h3 class="skills__title text-sm"></h3>
+
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">HTML</p>
+                            <span class="skills__number text-sm">40%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 40%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">CSS</p>
+                            <span class="skills__number text-sm">40%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 40%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">JAVA</p>
+                            <span class="skills__number text-sm">50%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 50%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">PYTHON</p>
+                            <span class="skills__number text-sm">60%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 60%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__content">
+                <h3 class="skills__title text-sm"></h3>
+
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">SQL</p>
+                            <span class="skills__number text-sm">45%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 45%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">C</p>
+                            <span class="skills__number text-sm">35%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 35%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <p class="skills__name text-sm">UNITY</p>
+                            <span class="skills__number text-sm">40%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage" style="width: 40%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--PROJELER-->
+      <section class="work section container" id="projeler">
+        <h2 class="section__title">Projeler</h2>
+        <div class="projects__container grid">
+            <div class="project__item grid">
+                <img src="assets/images/tübitak.png" alt="" class="project__img">
+                <div class="project__data">
+                    <h3 class="project__title text-lg">TÜBİTAK 2209-A</h3>
+                    <p class="project__description">TÜBİTAK’ın üniversite öğrencileri araştırma projeleri destekleme programına
+                                                    dört kişilik ekibimiz ile başvurduk. Projemizin ana başlığı "Futbol Müsabakalarının
+                                                    Görüntü İşleme ile Analizi" dir. Projede futbol müsabakalarının görüntü işleme teknikleri 
+                                                    ile analiz edilmesi ve görselleştirilmesi hedeflenmektedir. Üç boyutlu futbol
+                                                    görüntüsünün iki boyutlu kuşbakışı haritaya dönüştürülmesi ve sahadaki 
+                                                    aksiyonların (pas, şut, gol) tespiti amaçlanmaktadır.</p>
+                    <h4 class="project__stack text-xs">Konu Başlıkları:</h4>
+                    <ul class="tags text-sm">
+                        <li>Futbol Analizi</li>
+                        <li>Görüntü İşleme</li>
+                        <li>Projeksiyon</li>
+                        <li>Obje Tespiti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+      <section class="footer section">
+        <div class="footer__content container">
+           <p class="footer__copy">
+                        &copy; 2023 Ali Bulut. Tüm Hakları Saklıdır.
+           </p>
+        </div>
+      </section>
+
+    </main>
+    
+    <!--JS-->
+    <script src="assets/script.js"></script>
 </body>
 </html>
